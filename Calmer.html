@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Calming Sounds - PetyPie</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sound-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .sound-card:hover {
+            transform: translateY(-5px);
+        }
+        .sound-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .animal-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .play-button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+        .play-button:hover {
+            background: #45a049;
+        }
+        .sound-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+        .sound-description {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .hero {
+            padding: 100px 20px 40px;
+            text-align: center;
+            background: #f5f5f5;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        main {
+            padding-top: 60px; /* Add space for fixed navbar */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Petypie</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="health.html">Health Records</a>
+            <a href="shop.html">Pet-iShop</a>
+            <a href="community.html">Community</a>
+            <a href="services.html">Services</a>
+            <a href="events.html">Events</a>
+            <a href="Calmer.html" class="active">Calming Animals</a>
+        </div>
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Calming Sounds for Your Pets</h1>
+            <p>Help your pets relax with these soothing sounds specifically designed for different animals</p>
+        </section>
+
+        <section class="sound-grid">
+            <div class="sound-card">
+                <img src="https://images.unsplash.com/photo-1415369629372-26f2fe60c467" alt="Cat Relaxing" class="animal-image">
+                <h3 class="sound-title">Cat Purring</h3>
+                <p class="sound-description">Gentle purring sounds to calm anxious cats</p>
+                <audio id="cat-sound" src=sounds/cat-purring.mp3 type="audio/mpeg" loop></audio>
+                <button class="play-button" onclick="togglePlay('cat-sound', this)">Play Sound</button>
+            
+            </div>
+
+
+            <div class="sound-card">
+                <img src="https://media.istockphoto.com/id/1307609675/photo/bluebird.jpg?s=612x612&w=0&k=20&c=PdSeFBXLNi2n8vNxDjubRQOsaOw_sJ1w7RhtxjGL5GM=" alt="Bird Relaxing" class="animal-image">
+                <h3 class="sound-title">Bird Nature Sounds</h3>
+                <p class="sound-description">Natural forest ambiance for birds</p>
+                <audio id="bird-sound" src="sounds/bird-nature.mp3" loop ></audio>
+                <button class="play-button" onclick="togglePlay('bird-sound', this)">Play Sound</button>
+            </div>
+
+            <div class="sound-card">
+                <img src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48" alt="Dog Relaxing" class="animal-image">
+                <h3 class="sound-title">Calming Dog Music</h3>
+                <p class="sound-description">Soft piano tunes designed for dogs</p>
+                <audio id="dog-sound" src="sounds/dog-calm.mp3" loop></audio>
+                <button class="play-button" onclick="togglePlay('dog-sound', this)">Play Sound</button>
+            </div>
+
+            <div class="sound-card">
+                <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c" alt="Hamster Relaxing" class="animal-image">
+                <h3 class="sound-title">Hamster White Noise</h3>
+                <p class="sound-description">Gentle white noise for small rodents</p>
+                <audio id="hamster-sound" src="sounds/hamster-calm.mp3" loop></audio>
+                <button class="play-button" onclick="togglePlay('hamster-sound', this)">Play Sound</button>
+            </div>
+
+            <div class="sound-card">
+                <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308" alt="Rabbit Relaxing" class="animal-image">
+                <h3 class="sound-title">Rabbit Meditation</h3>
+                <p class="sound-description">Soft meadow sounds for rabbits</p>
+                <audio id="rabbit-sound" src="sounds/rabbit-meadow.mp3" loop></audio>
+                <button class="play-button" onclick="togglePlay('rabbit-sound', this)">Play Sound</button>
+            </div>
+
+            <div class="sound-card">
+                <img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5" alt="Aquarium Fish" class="animal-image">
+                <h3 class="sound-title">Aquarium Ambience</h3>
+                <p class="sound-description">Underwater bubbling sounds for fish</p>
+                <audio id="fish-sound" src="sounds/aquarium-bubbles.mp3" loop></audio>
+                <button class="play-button" onclick="togglePlay('fish-sound', this)">Play Sound</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function togglePlay(audioId, button) {
+            const audio = document.getElementById(audioId);
+            if (audio.paused) {
+                // Stop all other playing sounds first
+                document.querySelectorAll('audio').forEach(a => {
+                    if (!a.paused) {
+                        a.pause();
+                        a.currentTime = 0;
+                        a.previousElementSibling.textContent = 'Play Sound';
+                    }
+                });
+                
+                audio.play();
+                button.textContent = 'Pause Sound';
+            } else {
+                audio.pause();
+                audio.currentTime = 0;
+                button.textContent = 'Play Sound';
+            }
+        }
+
+        // Preload all audio files
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('audio').forEach(audio => {
+                audio.load();
+            });
+        });
+    </script>
+</body>
+</html>
