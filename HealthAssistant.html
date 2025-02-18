@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Assistant - Petypie</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Petypie</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="health.html">Health Records</a>
+            <a href="HealthAssistant.html" class="active">Health Assistant</a>
+            <a href="shop.html">Pet-iShop</a>
+            <a href="community.html">Community</a>
+            <a href="services.html">Services</a>
+            <a href="events.html">Events</a>
+        </div>
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="health-assistant-section">
+            <div class="assistant-container">
+                <div class="assistant-header">
+                    <h1><i class="fas fa-user-md"></i> Pet Health Assistant</h1>
+                    <p>Get instant guidance for your pet's health concerns</p>
+                </div>
+                
+                <div class="chat-interface">
+                    <div class="chat-messages" id="chat-messages">
+                        <!-- Messages will be added here dynamically -->
+                    </div>
+                    
+                    <div class="chat-input-area">
+                        <select id="concern-type" class="concern-select">
+                            <option value="">Select Concern Type</option>
+                            <option value="illness">Illness Symptoms</option>
+                            <option value="pregnancy">Pregnancy Care</option>
+                            <option value="emergency">Emergency Help</option>
+                            <option value="nutrition">Nutrition Advice</option>
+                            <option value="vaccination">Vaccination Queries</option>
+                        </select>
+                        <div class="input-group">
+                            <textarea id="health-query" placeholder="Describe your pet's condition or ask a question..."></textarea>
+                            <button id="send-query" class="send-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <h3>Quick Actions</h3>
+                    <div class="action-buttons">
+                        <button class="action-btn emergency-btn">
+                            <i class="fas fa-ambulance"></i>
+                            Emergency Vet Contacts
+                        </button>
+                        <button class="action-btn schedule-btn">
+                            <i class="fas fa-calendar-check"></i>
+                            Schedule Vet Visit
+                        </button>
+                        <button class="action-btn reminder-btn">
+                            <i class="fas fa-bell"></i>
+                            Set Medicine Reminder
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Petypie</h3>
+                <p>Your all-in-one pet care platform</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@petypie.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Petypie. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
