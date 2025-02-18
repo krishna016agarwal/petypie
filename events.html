@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events - Petypie</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="events.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">
-            <h1>Petypie</h1>
-        </div>
+        <a href="index.html" class="logo">Petypie</a>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="health.html">Health Records</a>
+            <a href="HealthAssistant.html">Health Assistant</a>
             <a href="shop.html">Pet-iShop</a>
             <a href="community.html">Community</a>
             <a href="services.html">Services</a>
             <a href="events.html" class="active">Events</a>
+            <a href="Calmer.html">Calming Animals</a>
         </div>
         <div class="auth-buttons">
             <button class="login-btn">Login</button>
@@ -27,62 +28,104 @@
         </div>
     </nav>
 
-    <main>
-        <section class="events-section">
-            <h1>Pet Events</h1>
-            <div class="events-filter">
-                <button class="filter-btn active" data-filter="all">All Events</button>
-                <button class="filter-btn" data-filter="meetups">Meetups</button>
-                <button class="filter-btn" data-filter="shows">Pet Shows</button>
-                <button class="filter-btn" data-filter="adoption">Adoption Days</button>
+    <main class="events-section">
+        <div class="events-header">
+            <h1>Upcoming Pet Events</h1>
+            <p>Join our vibrant pet community at these exciting events. From meetups to shows, there's something for every pet lover!</p>
+        </div>
+
+        <div class="events-filter">
+            <button class="filter-btn active" data-filter="all">All Events</button>
+            <button class="filter-btn" data-filter="meetup">Meetups</button>
+            <button class="filter-btn" data-filter="show">Shows</button>
+            <button class="filter-btn" data-filter="adoption">Adoption</button>
+        </div>
+        
+        <div class="events-grid">
+            <div class="event-card" data-category="meetup">
+                <div class="event-image">
+                    <img src="https://s3-us-west-1.amazonaws.com/assets.wagwalkingweb.com/media/daily_wag/blog_articles/body/1652985555.1716046/how-to-host-your-own-dog-meetup-event-3.png" alt="Dogs and owners gathering at a park for a social meetup">
+                </div>
+                <div class="event-details">
+                    <span class="event-tag">Meetup</span>
+                    <h3>Weekend Pet Meetup</h3>
+                    <div class="event-info">
+                        <p class="event-date"><i class="far fa-calendar"></i> March 1, 2024</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 2:00 PM</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Central Park</p>
+                    </div>
+                    <p class="event-description">Join us for a fun-filled afternoon with fellow pet owners. Bring your furry friends for playtime and socialization!</p>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
             </div>
             
-            <div class="events-grid">
-                <div class="event-card">
-                    <img src="images/event1.jpg" alt="Pet Meetup">
-                    <div class="event-details">
-                        <h3>Weekend Pet Meetup</h3>
-                        <p class="event-date"><i class="far fa-calendar"></i> March 1, 2024</p>
-                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Central Park</p>
-                        <p class="event-description">Join us for a fun-filled day with fellow pet owners and their furry friends!</p>
-                        <button class="register-btn">Register Now</button>
-                    </div>
+            <div class="event-card" data-category="show">
+                <div class="event-image">
+                    <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2023/01/17150433/Fashion-show-for-dogs-806x806.jpg" alt="Pet fashion show">
                 </div>
-                
-                <div class="event-card">
-                    <img src="images/event2.jpg" alt="Pet Show">
-                    <div class="event-details">
-                        <h3>Annual Pet Show</h3>
+                <div class="event-details">
+                    <span class="event-tag">Show</span>
+                    <h3>Annual Pet Show</h3>
+                    <div class="event-info">
                         <p class="event-date"><i class="far fa-calendar"></i> March 15, 2024</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 11:00 AM</p>
                         <p class="event-location"><i class="fas fa-map-marker-alt"></i> City Convention Center</p>
-                        <p class="event-description">Showcase your pet's talents and win amazing prizes!</p>
-                        <button class="register-btn">Register Now</button>
                     </div>
-                </div>
-                
-                <div class="event-card">
-                    <img src="images/event3.jpg" alt="Adoption Drive">
-                    <div class="event-details">
-                        <h3>Adoption Drive</h3>
-                        <p class="event-date"><i class="far fa-calendar"></i> March 30, 2024</p>
-                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> City Animal Shelter</p>
-                        <p class="event-description">Find your perfect companion at our monthly adoption drive.</p>
-                        <button class="register-btn">Learn More</button>
-                    </div>
+                    <p class="event-description">Showcase your pet's talents at our prestigious annual show. Prizes and recognition await!</p>
+                    <a href="#" class="register-btn">Register Now</a>
                 </div>
             </div>
-        </section>
+            
+            <div class="event-card" data-category="adoption">
+                <div class="event-image">
+                    <img src="https://content.api.news/v3/images/bin/bf943ac13d3dee48350f7e3cd066fb10" alt="Pet adoption event">
+                </div>
+                <div class="event-details">
+                    <span class="event-tag">Adoption</span>
+                    <h3>Adoption Drive</h3>
+                    <div class="event-info">
+                        <p class="event-date"><i class="far fa-calendar"></i> March 30, 2024</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 10:00 AM</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> City Animal Shelter</p>
+                    </div>
+                    <p class="event-description">Give a loving home to a pet in need. Meet adorable cats and dogs looking for forever homes.</p>
+                    <a href="#" class="register-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="featured-events">
+            <h2>Featured Event</h2>
+            <div class="event-card featured" data-category="show">
+                <div class="event-image">
+                    <img src="data:image/jpeg;base64,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" alt="Pet Olympics">
+                </div>
+                <div class="event-details">
+                    <span class="event-tag">Special</span>
+                    <h3>Pet Olympics 2024</h3>
+                    <div class="event-info">
+                        <p class="event-date"><i class="far fa-calendar"></i> April 15, 2024</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 9:00 AM</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Sports Complex</p>
+                    </div>
+                    <p class="event-description">The biggest pet event of the year! Join us for a day of competitions, shows, and amazing performances.</p>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer class="footer">
+    <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>About Petypie</h3>
-                <p>Your all-in-one pet care platform</p>
+                <h3>About Us</h3>
+                <p>Petypie is your one-stop destination for all pet-related services and community engagement.</p>
             </div>
             <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: support@petypie.com</p>
+                <h3>Quick Links</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
             </div>
             <div class="footer-section">
                 <h3>Follow Us</h3>
@@ -97,6 +140,7 @@
             <p>&copy; 2024 Petypie. All rights reserved.</p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
