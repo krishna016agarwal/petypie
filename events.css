@@ -138,13 +138,19 @@
     margin-bottom: 1rem;
 }
 
-.event-date,
+.event-date{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
 .event-time,
 .event-location {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #666;
+    color: #414141;
     font-size: 0.9rem;
 }
 

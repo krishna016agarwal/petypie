@@ -1207,8 +1207,8 @@ width: 100%;
 }
 
 .event-date {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: rgb(244, 104, 104);
+    color: rgb(16, 2, 2);
     padding: 1rem;
     text-align: center;
     min-width: 80px;
