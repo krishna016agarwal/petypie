@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Petypie</title>
+    <title>Our Services - PetyPie</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -16,12 +16,11 @@
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="health.html">Health Records</a>
-            <a href="HealthAssistant.html">Health Assistant</a>
             <a href="shop.html">Pet-iShop</a>
             <a href="community.html">Community</a>
             <a href="services.html" class="active">Services</a>
             <a href="events.html">Events</a>
-            <a href="Calmer.html">Calming Animals</a>
+            <a href="Calmer.html">Relaxypi</a>
         </div>
         <div class="auth-buttons">
             <button class="login-btn">Login</button>
@@ -31,58 +30,91 @@
 
     <main>
         <section class="services-section">
-            <h1>Pet Services</h1>
+            <div class="services-hero">
+                <div class="hero-content">
+                    <h1>Premium Pet Services</h1>
+                    <p>Discover our comprehensive range of professional pet care services designed to keep your furry friends happy and healthy.</p>
+                </div>
+            </div>
+
             <div class="service-grid">
+                <!-- Healthcare Service -->
                 <div class="service-card">
-                    <i class="fas fa-hospital"></i>
-                    <h3>Healthcare</h3>
-                    <p>Find veterinary clinics and book appointments</p>
-                    <div class="service-details">
-                        <ul>
-                            <li>24/7 Emergency Care</li>
-                            <li>Regular Checkups</li>
-                            <li>Specialized Treatment</li>
-                        </ul>
-                        <button class="book-btn">Book Now</button>
+                    <div class="card-content">
+                        <div class="service-badge">Most Popular</div>
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Healthcare</h3>
+                        <p>Complete veterinary care including checkups, vaccinations, and emergency services for your beloved pets.</p>
+                        <div class="service-price">
+                            <span class="amount">$49</span>
+                            <span class="period">/ visit</span>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="primary-btn">Book Now</button>
+                            <button class="secondary-btn">Learn More</button>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Grooming Service -->
                 <div class="service-card">
-                    <i class="fas fa-cut"></i>
-                    <h3>Grooming</h3>
-                    <p>Professional pet grooming services</p>
-                    <div class="service-details">
-                        <ul>
-                            <li>Bath & Brush</li>
-                            <li>Hair Trimming</li>
-                            <li>Nail Care</li>
-                        </ul>
-                        <button class="book-btn">Book Now</button>
+                    <div class="card-content">
+                        <div class="service-badge">Trending</div>
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Grooming</h3>
+                        <p>Professional grooming services including bath, haircut, nail trimming, and spa treatments for your pets.</p>
+                        <div class="service-price">
+                            <span class="amount">$39</span>
+                            <span class="period">/ session</span>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="primary-btn">Book Now</button>
+                            <button class="secondary-btn">Learn More</button>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Training Service -->
                 <div class="service-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Training</h3>
-                    <p>Expert pet training programs</p>
-                    <div class="service-details">
-                        <ul>
-                            <li>Behavior Training</li>
-                            <li>Obedience Classes</li>
-                            <li>Specialized Programs</li>
-                        </ul>
-                        <button class="book-btn">Book Now</button>
+                    <div class="card-content">
+                        <div class="service-badge">Expert Led</div>
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Training</h3>
+                        <p>Comprehensive training programs for all breeds, focusing on obedience, behavior, and socialization skills.</p>
+                        <div class="service-price">
+                            <span class="amount">$59</span>
+                            <span class="period">/ class</span>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="primary-btn">Book Now</button>
+                            <button class="secondary-btn">Learn More</button>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Daycare Service -->
                 <div class="service-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Adoption</h3>
-                    <p>Give a loving home to pets in need</p>
-                    <div class="service-details">
-                        <ul>
-                            <li>Meet & Greet</li>
-                            <li>Adoption Process</li>
-                            <li>Post-adoption Support</li>
-                        </ul>
-                        <button class="book-btn">Learn More</button>
+                    <div class="card-content">
+                        <div class="service-badge">Full Day Care</div>
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Daycare</h3>
+                        <p>Safe and fun daycare environment with supervised play, rest areas, and constant attention from our staff.</p>
+                        <div class="service-price">
+                            <span class="amount">$29</span>
+                            <span class="period">/ day</span>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="primary-btn">Book Now</button>
+                            <button class="secondary-btn">Learn More</button>
+                        </div>
                     </div>
                 </div>
             </div>
